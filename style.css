@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-size: 1rem; */
+    font-family: monospace, sans-serif;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Typography */
+
+.title{
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+.title span{
+    font-weight: 300;
+    display: block;
+    font-size: .9em;
+}
+
+
+/* Buttons */
+
+.button{
+    display: inline-block;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #00ffc6;
+    padding: .5em 1.5em;
+}
+
+.button-accent{
+    color: #00ffc6;
+}
+
+.button-accent:hover,
+.button-accent:focus{
+    background-color: #00ffc6;
+    color: #232323;
+}
+
+/* Header */
+
+header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 1em;
+}
+
+.logo{
+    width: 35%;
+    margin: 0 auto;
+}
+
+
+nav li{
+    display: inline-block;
+    margin: 1em;
+}
+
+nav a{
+    color: #000;
+    font-size: .9rem;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .5em;
+}
+
+nav a:hover,
+nav a:focus{
+    color: lightgreen;
+}
+
+
+/* Home Hero */
+
+.home-hero{
+    background-image: url(./Images/drawers.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10em 0;
+}
+
+
+
+@media screen and (min-width: 55rem){
+
+    .container{
+        width: 90%;
+    }
+
+    .title{
+        font-size: 3.7rem;
+    }
+
+    .logo{
+        width: 20%;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1em;
+    }
+
+    .home-hero{
+        height: 100vh;
+        padding-top: 35vh;
+    }
+
+    .button{
+        font-size: 1.5rem;
+    }
+
+}
